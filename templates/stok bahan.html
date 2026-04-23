@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produk</title>
+</head>
+<body>
+    <h1>Daftar Produk</h1>
+
+    {% for item in produk %}
+        <div>
+            <h3>{{ item.nama }}</h3>
+            <p>Kategori: {{ item.kategori }}</p>
+            <p>Harga: Rp {{ item.harga }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+
+    <a href="/">Kembali</a>
+</body>
+</html>
